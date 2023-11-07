@@ -1,0 +1,104 @@
+/* Global */
+html {
+   background: #e7ecef;
+   color: #0d1b2a;
+   font-family: sans-serif;
+   text-align: center;
+   margin: auto;
+}
+
+body {
+   color: #0d1b2a;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin: auto;
+}
+
+.column {
+   float: left;
+}
+
+/* Navigation */
+.nav a {
+	color: #0d1b2a;
+	padding: 14px 16px;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.nav a.active {
+	color: #f85a3e;
+   text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+   /* position: fixed;
+   left: 0;
+   bottom: 0; */
+   width: 100%;
+   background-color: #0d1b2a;
+   color: #e7ecef;
+   text-decoration: none;
+}
+
+/* Homepage */
+
+.hero-l { 
+   width: 15%;
+}
+
+.hero-m { 
+   width: 30%; 
+}
+
+.hero-r { 
+   width: 55%;
+   text-align: right;
+   font-size: 1.6em;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.name {
+   color: #f85a3e;
+   display: flex;
+   flex-direction: column;
+   float: left;
+   margin: 0;
+   font-size: 5em;
+   line-height: 1em;
+   word-wrap: break-word;
+   border-left: 8px solid #f85a3e;
+   padding-left: 8px;
+}
+
+
+/* bumper.html */ 
+.bumper {
+   background-color: #0d1b2a;
+   width: 100%;
+   height: 10vh;
+}
+
+/* dev.html */
+.dev {
+   float: center;
+}
+
+.dev-l {
+   width: 40%;
+}
+
+.dev-r {
+   width: 60%;
+}
+

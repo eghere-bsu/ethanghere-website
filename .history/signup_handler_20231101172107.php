@@ -1,0 +1,18 @@
+<?php
+session_start();
+
+require_once 'KLogger.php';
+$logger = new KLogger ("log.txt" , KLogger::WARN);
+sleep(2);
+echo "<html>signup_handler</html>";
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$logger->LogDebug("User [{$username}] attempting to create account");
+
+// $_SESSION['message_type'] = "happy";
+
+// $dao = new Dao();
+// $dao->createUser($username, $password);
+// $_SESSION['message'] = "Thanks for signing up!";
+header("Location: signup.php");

@@ -1,0 +1,23 @@
+<?php
+session_start();
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+require_once 'KLogger.php';
+$logger = new KLogger ("log.txt" , KLogger::WARN);
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$logger->LogDebug("User [{$username}] attempting to log in");
+
+// check the database
+if ($username == 'eghere' && $password == 'labrador') {
+  $_SESSION['auth'] = true;
+  header("Location: index.php");
+  exit();
+} else {
+  $logger->LogWarn("User [{$username}] invalid username or password");
+  $_SESSION['message'] = 'Invalid Username or password';
+  header("Location: login.php");
+  exit();
+}

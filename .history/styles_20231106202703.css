@@ -1,0 +1,128 @@
+/* Global */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+ 
+
+html {
+   background: #e7ecef;
+   color: #0d1b2a;
+   font-family: 'Roboto', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   margin: auto;
+}
+
+body {
+   color: #0d1b2a;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin: auto;
+}
+
+.column {
+   float: left;
+}
+
+/* Navigation */
+.nav a {
+	color: #0d1b2a;
+	padding: 14px 16px;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.nav a.active {
+	color: #f85a3e;
+   text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+   /* position: fixed;
+   left: 0;
+   bottom: 0; */
+   width: 100%;
+   background-color: #0d1b2a;
+   color: #e7ecef;
+   text-decoration: none;
+}
+
+/* Homepage */
+
+.hero-l { 
+   width: 15%;
+}
+
+.hero-m { 
+   width: 30%; 
+}
+
+.hero-r { 
+   width: 55%;
+   text-align: right;
+   font-size: 1.6em;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.name {
+   color: #f85a3e;
+   display: flex;
+   flex-direction: column;
+   float: left;
+   margin: 0;
+   font-size: 5em;
+   line-height: 1em;
+   word-wrap: break-word;
+   border-left: 8px solid #f85a3e;
+   padding-left: 8px;
+}
+
+#stripes {
+	height: 100vh;
+	background: #0d1b2a;
+	clip-path: polygon(0 77%, 0% 100%, 100% 100%);
+}
+
+/* bumper.html */ 
+/* angled div */
+.slanted-div {
+   position: relative;
+   padding: 200px 0;
+   background: #128c7e;
+   overflow: visible;
+   z-index: 1;
+ }
+ 
+ /* where the magic happens */
+ .slanted-div:after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   background: inherit;
+   z-index: -1;
+   bottom: 0;
+   transform-origin: left bottom;
+   transform: skewY(3deg);
+ }
+ 
+ /* displays the content inside, as these settings in the parent breaks the effect */
+ .slanted-div div {
+   text-align: center;
+   font-size: 1.5em;
+   line-height: 1.5;
+ }
+
+/* dev.php */
+
