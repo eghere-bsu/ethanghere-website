@@ -29,7 +29,14 @@ class Dao {
             $this->pass = 'dbrnyuq8526w3wp3';
         }
     }
-    
+  
+  private $host = "localhost";
+  private $db = "db";
+    private $user = "eghere";
+  private $pass = "labrador";
+
+  
+
   //deployment
   //mariadb -h vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com -u bf28epl5ub2me1yp -pdbrnyuq8526w3wp3 r9n0gt3rioqj5f5n
 

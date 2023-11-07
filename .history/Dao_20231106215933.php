@@ -5,31 +5,12 @@ error_reporting(E_ALL);
 // class for saving and getting comments from MySQL
 class Dao {
 
-  private $host;
-    private $db;
-    private $user;
-    private $pass;
+  //localhost
+  private $host = "localhost";
+  private $db = "db";
+    private $user = "eghere";
+  private $pass = "labrador";
 
-    public function __construct() {
-        // Determine the server name
-        $serverName = $_SERVER['SERVER_NAME'];
-
-        // Set the database credentials based on the server name
-        if ($serverName === 'localhost') {
-            // Local database credentials
-            $this->host = 'localhost';
-            $this->db = 'db';
-            $this->user = 'eghere';
-            $this->pass = 'labrador';
-        } else {
-            // Online database credentials
-            $this->host = 'vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'; 
-            $this->db = 'r9n0gt3rioqj5f5n';
-            $this->user = 'bf28epl5ub2me1yp';
-            $this->pass = 'dbrnyuq8526w3wp3';
-        }
-    }
-    
   //deployment
   //mariadb -h vkh7buea61avxg07.cbetxkdyhwsb.us-east-1.rds.amazonaws.com -u bf28epl5ub2me1yp -pdbrnyuq8526w3wp3 r9n0gt3rioqj5f5n
 
