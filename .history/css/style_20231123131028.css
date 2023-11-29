@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  color: #0d1b2a;
+  background-color: #e7ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes buttonHoverEffect {
+  0% {
+    background-image: none;
+    background-color: transparent;
+  }
+  50% {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    mix-blend-mode: multiply;
+  }
+  100% {
+    background-image: none;
+    background-color: transparent;
+  }
+}
+
+.button {
+  /* Common styles for all buttons */
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #e7ecef;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  
+
+  /* Fallback for browsers that don't support background-blend-mode */
+  background-image: linear-gradient(to bottom, rgba(231, 236, 239, 0.1), rgba(231, 236, 239, 0.1));
+  background-blend-mode: multiply;
+
+  /* Apply the hover animation to any button with the .hover class */
+  &.hover {
+    animation: buttonHoverEffect 0.5s ease-in-out forwards;
+  }
+}
+
+.linkedin {
+  background-color: #0077b5;
+  color: #e7ecef;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: #e7ecef;
+}
+
+/* Landing page */
+section#home {
+  height: 80vh;
+  color: #e7ecef;
+  background-color: #0d1b2a;
+}
+
+/* TODO
+section#skills {}
+*/
+
+/* TODO
+section#portfolio {} */
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #e7ecef;
+}
+
+/* Navigation */
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+nav .container ul li {
+  display: inline-block;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #0d1b2a;
+}
+
+nav .container ul li.active {
+  background-color: #f85a3e;
+  transition: 0.3s ease background-color;
+  border-radius: 10px;
+}
+
+nav .container ul li.active a {
+  color: rgb(231, 236, 239);
+}

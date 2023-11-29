@@ -1,0 +1,29 @@
+<div class="modal" id="login-signup-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="container">
+            <ul>
+              <li class="login active">
+                <a href="#login">Log In</a>
+              </li>
+              <li class="signup">
+                <a href="#signup">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="tab" id="login-tab">
+            <h2>Log In</h2>
+            <form method="post" action="login_handler.php" id="login-form">
+              <label for="username">Username:</label>
+              <input type="username" id="username" name="username" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>

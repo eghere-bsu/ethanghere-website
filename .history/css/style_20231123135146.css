@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  color: #0d1b2a;
+  background-color: #e7ecef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 8em;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid #e7ecef;
+  color: #e7ecef;
+  background-color: #0d1b2a;
+  transition: 0.3s ease background-color;
+}
+
+.button:hover {
+  background-color: #f85a3e;
+}
+
+.button:hover:after {
+  transition: 0.3s ease background-color;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+/* Landing page */
+section#home {
+  height: 80vh;
+  color: #e7ecef;
+  background-color: #0d1b2a;
+}
+
+/* TODO
+section#skills {}
+*/
+
+/* TODO
+section#portfolio {} */
+
+/* Navigation */
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #e7ecef;
+}
+
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  min-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+nav .container ul li {
+  display: inline-block;
+}
+
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #0d1b2a;
+  border-radius: 12px;
+  transition: 0.3 ease background-color;
+}
+
+nav .container ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+nav .container ul li a:hover:after {
+  transition: 0.3 ease background-color;
+}
+
+nav .container ul li.active {
+  background-color: #f85a3e;
+  transition: 0.3s ease background-color;
+  border-radius: 12px;
+}
+
+nav .container ul li.active a {
+  color: rgb(231, 236, 239);
+}
+
+.navlink {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #0d1b2a;
+  border-radius: 12px;
+  transition: 0.3s ease background-color;
+}
+
+nav .container ul li .navlink:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+nav .container ul li .navlink:hover:after {
+  transition: 0.3s ease background-color;
+}
+
+nav .container ul li.active .navlink {
+  background-color: #f85a3e;
+  transition: 0.3s ease background-color;
+  border-radius: 12px;
+}
+
+nav .container ul li.active .navlink a {
+  color: rgb(231, 236, 239);
+}

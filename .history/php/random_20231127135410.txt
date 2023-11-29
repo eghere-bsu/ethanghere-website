@@ -1,0 +1,58 @@
+<div class="modal" id="login-signup-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="container">
+            <ul>
+              <li class="login active">
+                <a href="#login">Log In</a>
+              </li>
+              <li class="signup">
+                <a href="#signup">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="tab" id="login-tab">
+            <h2>Log In</h2>
+            <form method="post" action="login_handler.php" id="login-form">
+              <label for="username">Username:</label>
+              <input type="username" id="username" name="username" required>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+              <button type="submit">Log In</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+* attempt 2
+
+<div class="modal" id="login-signup-modal">
+      <div class="form-container">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <form id="form" action="" method="post">
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
